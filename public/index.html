@@ -1,0 +1,103 @@
+<!DOCTYPE html>
+<html lang="hi">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width,initial-scale=1">
+<meta name="theme-color" content="#05020d">
+<title>Rahul Mic Pro | RGB Mic Setup</title>
+<style>
+:root{--bg:#020804;--green:#00ff66;--lime:#aaff00;--cyan:#00ffc8;--muted:#8cae98}
+*{box-sizing:border-box}html{scroll-behavior:smooth}body{margin:0;background:#020804;color:#d9ffe4;font-family:Consolas,"Courier New",monospace;overflow-x:hidden}
+body:before{content:"";position:fixed;inset:0;z-index:-1;opacity:.16;background:repeating-linear-gradient(0deg,transparent 0 3px,#00ff6622 4px),radial-gradient(circle at 50% 20%,#00ff3333,transparent 50%)}
+a{color:inherit;text-decoration:none}.top{position:sticky;top:0;z-index:20;background:#020804f5;border-bottom:1px solid var(--green);box-shadow:0 0 20px #00ff6655;padding:12px 3%;display:flex;align-items:center;justify-content:space-between;gap:12px;flex-wrap:wrap}
+.brand{font-size:clamp(22px,4vw,36px);font-weight:1000;text-shadow:0 0 12px var(--green);letter-spacing:1px}.brand b,.brand em{color:var(--green);font-style:normal}
+nav{display:flex;gap:8px;flex-wrap:wrap}nav a{padding:10px 14px;border:1px solid var(--green);border-radius:5px;box-shadow:0 0 10px #00ff6644;font-weight:800;font-size:13px;color:var(--green);background:#001708}
+.hero{max-width:1200px;margin:18px auto;padding:34px 4%;min-height:340px;border:1px solid var(--green);border-radius:8px;position:relative;overflow:hidden;background:linear-gradient(135deg,#001306,#020804 55%,#001b11);box-shadow:0 0 25px #00ff6644,inset 0 0 40px #00ff6618;text-align:center}
+.hero:before{content:"01001010  10110100  00101101  11001010";position:absolute;inset:10px;color:#00ff661b;font-size:clamp(16px,4vw,35px);font-weight:900;word-spacing:20px;line-height:2;pointer-events:none}
+.mic-art{font-size:clamp(65px,12vw,130px);filter:drop-shadow(0 0 15px var(--green));margin:0 auto 2px;position:relative}
+.hero h1{font-size:clamp(38px,8vw,86px);line-height:1;margin:5px 0;font-weight:1000;text-shadow:0 0 18px #00ff88}
+.hero h1 span{color:var(--lime)}.hero h1 em{color:var(--green)}
+.tagline{display:inline-block;background:#002d13;color:var(--green);border:1px solid var(--green);font-weight:1000;font-size:clamp(17px,3.5vw,30px);padding:8px 22px;margin:12px 0;box-shadow:0 0 14px #00ff6644}
+.perks{font-weight:900;font-size:clamp(14px,2.4vw,22px);margin-top:12px;color:var(--lime)}.perks span{color:var(--green)}
+.equalizer{height:48px;display:flex;align-items:end;justify-content:center;gap:4px;margin:18px auto 0;max-width:700px}.equalizer i{width:8px;border-radius:2px 2px 0 0;background:linear-gradient(var(--lime),var(--green));box-shadow:0 0 8px var(--green);height:var(--h)}
+.features{max-width:1200px;margin:12px auto 25px;display:grid;grid-template-columns:repeat(6,1fr);gap:12px;padding:0 14px}.feature{border:1px solid var(--green);border-radius:7px;text-align:center;padding:13px 5px;background:linear-gradient(145deg,#06180b,#020804);box-shadow:0 0 12px #00ff6633;font-weight:900;min-height:108px;color:#d9ffe4}.feature strong{display:block;font-size:30px;margin-bottom:6px;filter:grayscale(1) sepia(1) hue-rotate(65deg)}
+.section-title{text-align:center;font-size:clamp(25px,5vw,38px);font-weight:1000;margin:30px 0 18px;color:var(--green);text-shadow:0 0 14px #00ff66}
+.cards{max-width:1200px;margin:auto;padding:0 14px;display:grid;grid-template-columns:repeat(5,1fr);gap:14px}.setup{--c:#00ff66;border:1px solid var(--c);border-radius:8px;padding:14px 10px;text-align:center;background:radial-gradient(circle at 50% 70%,#00ff6625,#030b05 65%);box-shadow:0 0 15px #00ff6644;min-height:260px;display:flex;flex-direction:column;align-items:center;justify-content:space-between}.setup h3{font-size:21px;margin:0;line-height:1.1;color:var(--lime)}.setup .bigmic{font-size:76px;filter:drop-shadow(0 0 12px var(--green));margin:12px 0}.play{border:1px solid var(--green);border-radius:5px;padding:10px 20px;color:#001506;background:var(--green);font-weight:1000;font-size:16px;cursor:pointer;box-shadow:0 0 14px #00ff6688}.play:active,button:active{transform:scale(.97)}
+.booster{margin:30px auto;max-width:1200px;border-top:1px solid var(--green);border-bottom:1px solid var(--green);padding:26px 12px;text-align:center;background:linear-gradient(90deg,#001306,#041009,#001b11);box-shadow:0 0 16px #00ff6633}.booster h2{font-size:clamp(30px,6vw,62px);margin:0;color:#eaffef}.booster h2 span{color:var(--lime)}.booster p{font-size:20px;font-weight:900;color:var(--green);margin:8px}
+.room{max-width:1000px;margin:35px auto;padding:20px 16px;border:1px solid var(--green);border-radius:8px;box-shadow:0 0 20px #00ff6644;background:#031007}.room h2{text-align:center;color:var(--green);font-size:30px;margin:4px}.room p{text-align:center;color:#a8cbb2}.room-controls{display:flex;gap:9px;flex-wrap:wrap;justify-content:center;margin:16px 0}.room input{background:#020804;color:var(--green);border:1px solid var(--green);border-radius:5px;padding:13px;font-size:16px;min-width:180px}.action{border:1px solid var(--green);border-radius:5px;padding:13px 18px;font-weight:900;color:#001506;background:var(--green);cursor:pointer}.action.secondary{background:#b7ff00;border-color:#b7ff00}.action.danger{background:#672020;border-color:#ff5656;color:#fff}.status{text-align:center;color:#8affaa;font-weight:800;min-height:24px}.people{display:flex;gap:8px;justify-content:center;flex-wrap:wrap}.person{padding:8px 13px;border:1px solid var(--green);border-radius:4px;background:#061b0b;color:var(--green)}
+footer{text-align:center;padding:20px;color:#8cae98;border-top:1px solid #00ff66} .note{font-size:12px;color:#8cae98;text-align:center;max-width:850px;margin:10px auto 24px;padding:0 12px}
+@media(max-width:850px){.features{grid-template-columns:repeat(3,1fr)}.cards{grid-template-columns:repeat(2,1fr)}.setup:last-child{grid-column:span 2}.hero{margin:12px}.top{justify-content:center}.brand{width:100%;text-align:center}}
+@media(max-width:430px){nav a{font-size:12px;padding:8px 10px}.cards{gap:9px}.setup{min-height:225px}.setup h3{font-size:18px}.setup .bigmic{font-size:60px}.features{gap:8px}.feature{font-size:13px;min-height:94px}.feature strong{font-size:25px}}
+</style>
+</head>
+<body>
+<header class="top">
+  <div class="brand">&gt; RAHUL_<b>MIC</b>_<em>PRO</em>_</div>
+  <nav><a href="#home">⌂ Home</a><a href="#setups">⭐ Mic Setup</a><a href="#room">♫ All Mic</a><a href="#download">🚀 Download</a></nav>
+</header>
+<main id="home">
+<section class="hero">
+  <div class="mic-art">🎙️</div>
+  <h1>Rahul <span>Mic</span> <em>Pro</em></h1>
+  <div class="tagline">&gt; ALL_MIC // ALL_PHONE // ONLINE</div>
+  <div class="perks"><span>High Quality</span>　⭐　<span>Super Fast</span>　⭐　<span>100% Free Demo</span></div>
+  <div class="equalizer" id="eq"></div>
+</section>
+<section class="features">
+  <div class="feature" style="--c:#d500ff"><strong>🚀</strong>10.11.12<br>Mic Setup</div>
+  <div class="feature" style="--c:#00dfff"><strong>💎</strong>13.14.15<br>Mic Setup</div>
+  <div class="feature" style="--c:#29ff38"><strong>👑</strong>16V<br>Mic Setup</div>
+  <div class="feature" style="--c:#147dff"><strong>⚡</strong>New Mic<br>System</div>
+  <div class="feature" style="--c:#ff00a8"><strong>🎧</strong>Premium<br>Sound</div>
+  <div class="feature" style="--c:#28ff3e"><strong>👍</strong>Best<br>Performance</div>
+</section>
+<h2 class="section-title" id="setups">✨ ⭐ Top Mic Setup ⭐ ✨</h2>
+<section class="cards">
+  <article class="setup" style="--c:#ff00d4"><h3>10.11.12<br>Mic Setup</h3><div class="bigmic">🎙️</div><button class="play" data-setup="10.11.12">▶ Play Now</button></article>
+  <article class="setup" style="--c:#00bfff"><h3>13.14.15<br>Mic Setup</h3><div class="bigmic">🎙️</div><button class="play" data-setup="13.14.15">▶ Play Now</button></article>
+  <article class="setup" style="--c:#39ff14"><h3>16V<br>Mic Setup</h3><div class="bigmic">🎙️</div><button class="play" data-setup="16V">▶ Play Now</button></article>
+  <article class="setup" style="--c:#ff3030"><h3>New Mic<br>System</h3><div class="bigmic">🎙️</div><button class="play" data-setup="New Mic System">▶ Play Now</button></article>
+  <article class="setup" style="--c:#00eaff"><h3>DJ Mic<br>Setup</h3><div class="bigmic">🎙️</div><button class="play" data-setup="DJ Mic">▶ Play Now</button></article>
+</section>
+<section class="booster" id="download"><h2>Super <span>Mic</span> <em style="color:#00eaff">Booster</em></h2><p>[ FEEL THE REAL SOUND EXPERIENCE ]</p></section>
+<section class="room" id="room">
+  <h2>🎙️ [ LIVE VOICE ROOM ]</h2>
+  <p>Sab users ek hi Rahul Mic Pro room mein aa sakte hain • maximum 6 participants</p>
+  <div class="room-controls">
+    
+    <button class="action" id="joinBtn">Join Room</button>
+    <button class="action secondary" id="muteBtn" disabled>Mic Mute</button>
+    <button class="action danger" id="leaveBtn" disabled>Leave</button>
+  </div>
+  <div class="status" id="status">Join dabakar Rahul Mic Pro room mein aao.</div>
+  <div class="people" id="people"></div>
+</section>
+<p class="note">Note: Mic permission allow karein. Ye demo hai; public use se pehle secure hosting, TURN server aur moderation setup zaroori hai.</p>
+</main>
+<footer>👑 Designed by <b style="color:#ffe600">Rahul Mic Pro</b> 👑</footer>
+<script src="/socket.io/socket.io.js"></script>
+<script>
+const eq=document.getElementById('eq');
+for(let i=0;i<48;i++){const b=document.createElement('i');b.style.setProperty('--h',(8+Math.random()*38)+'px');eq.appendChild(b)}
+document.querySelectorAll('[data-setup]').forEach(btn=>btn.addEventListener('click',()=>{document.querySelectorAll('.setup').forEach(c=>c.style.outline='none');btn.closest('.setup').style.outline='3px solid white';document.getElementById('status').textContent=btn.dataset.setup+' selected. Voice Room join karne ke liye room code dalo.';document.getElementById('room').scrollIntoView({behavior:'smooth'});}));
+const socket=io();let localStream=null,pcs={},room=null,muted=false,peerNames={};
+const statusEl=document.getElementById('status'),people=document.getElementById('people'),joinBtn=document.getElementById('joinBtn'),muteBtn=document.getElementById('muteBtn'),leaveBtn=document.getElementById('leaveBtn');
+const config={iceServers:[{urls:'stun:stun.l.google.com:19302'}]};
+function status(t){statusEl.textContent=t}
+function addPerson(id,label){peerNames[id]=label;renderPeople()}
+function renderPeople(){people.innerHTML='';const ids=[socket.id,...Object.keys(peerNames)];ids.filter(Boolean).forEach((id,i)=>{const el=document.createElement('span');el.className='person';el.textContent=i===0?'You (aap)':`Guest ${i}`;people.appendChild(el)})}
+async function makePC(id,offer){if(pcs[id])return pcs[id];const pc=new RTCPeerConnection(config);pcs[id]=pc;if(localStream)localStream.getTracks().forEach(t=>pc.addTrack(t,localStream));pc.onicecandidate=e=>{if(e.candidate)socket.emit('signal',{to:id,data:{candidate:e.candidate}})};pc.ontrack=e=>{let audio=document.getElementById('audio-'+id);if(!audio){audio=document.createElement('audio');audio.id='audio-'+id;audio.autoplay=true;audio.playsInline=true;document.body.appendChild(audio)}audio.srcObject=e.streams[0]};pc.onconnectionstatechange=()=>{if(pc.connectionState==='failed'||pc.connectionState==='closed')closePC(id)};if(offer){const desc=await pc.createOffer();await pc.setLocalDescription(desc);socket.emit('signal',{to:id,data:{description:pc.localDescription}})}return pc}
+function closePC(id){if(pcs[id]){pcs[id].close();delete pcs[id]}const a=document.getElementById('audio-'+id);if(a)a.remove();delete peerNames[id];renderPeople()}
+joinBtn.onclick=async()=>{if(room)return;room='RAHUL-MIC-PRO';joinBtn.disabled=true;try{localStream=await navigator.mediaDevices.getUserMedia({audio:true});socket.emit('join-room',{room})}catch(e){room=null;joinBtn.disabled=false;status('Mic permission nahi mili. Browser settings mein microphone allow karo.')}};
+socket.on('room-joined',async({peers})=>{status('Room connected! Mic live hai.');joinBtn.disabled=true;muteBtn.disabled=false;leaveBtn.disabled=false;renderPeople();for(const id of peers)await makePC(id,true)});
+socket.on('peer-joined',({peerId})=>{addPerson(peerId,'Guest');status('Naya member room mein aaya.')});
+socket.on('signal',async({from,data})=>{try{const pc=await makePC(from,false);if(data.description){await pc.setRemoteDescription(data.description);if(data.description.type==='offer'){const answer=await pc.createAnswer();await pc.setLocalDescription(answer);socket.emit('signal',{to:from,data:{description:pc.localDescription}})}}if(data.candidate)await pc.addIceCandidate(data.candidate)}catch(e){console.error(e)}});
+socket.on('peer-left',({peerId})=>{closePC(peerId);status('Ek member room se chala gaya.')});
+socket.on('room-count',n=>{status(`Room mein ${n} participant(s) hain.`)});
+socket.on('room-error',msg=>{status(msg);room=null;joinBtn.disabled=false;if(localStream){localStream.getTracks().forEach(t=>t.stop());localStream=null}});
+muteBtn.onclick=()=>{if(!localStream)return;muted=!muted;localStream.getAudioTracks().forEach(t=>t.enabled=!muted);muteBtn.textContent=muted?'Mic Unmute':'Mic Mute';status(muted?'Aapka mic mute hai.':'Aapka mic live hai.')};
+function leaveRoom(){if(room)socket.emit('leave-room');Object.keys(pcs).forEach(closePC);if(localStream){localStream.getTracks().forEach(t=>t.stop());localStream=null}room=null;muted=false;joinBtn.disabled=false;muteBtn.disabled=true;leaveBtn.disabled=true;muteBtn.textContent='Mic Mute';people.innerHTML='';status('Aap room se bahar aa gaye.')}
+leaveBtn.onclick=leaveRoom;window.addEventListener('beforeunload',()=>{if(room)socket.emit('leave-room')});
+</script>
+</body>
+  </html>
